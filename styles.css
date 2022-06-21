@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+    font-family: var(--font-main);
+    font-weight: 400;
+}
+img {
+    display: block;
+    border: none;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+a,
+a:hover,
+a:focus {
+    color: #000000;
+    text-decoration: none;
+}
+
+.sidebar{
+    
+    padding: 20px 0px 30px 15px;
+    width: 350px;
+    background-color: rgb(228, 227, 217);
+}
+.photo{
+    border-radius: 50%;
+}
