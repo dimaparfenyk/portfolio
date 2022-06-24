@@ -1,3 +1,11 @@
+:root {
+    --font-title: "Roboto", sans-serif;
+    --font-main: "Source Sans Pro", sans-serif;
+    --font-size: 14px;
+    --line-height: 1.3;
+    --letter-spacing: 0.03em;
+}
+
 body {
     margin: 0;
     font-family: var(--font-main);
@@ -12,12 +20,66 @@ ul {
     padding: 0;
     margin: 0;
 }
+
 a,
 a:hover,
 a:focus {
     color: #000000;
     text-decoration: none;
 }
+/* ____________________________TEXT STYLES________________________ */
+.title{
+    text-align: center;
+    font-size: 40px;
+}
+.subtitle{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+}
+.section-text{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+/* _____________________GRID_____________________- */
+.container {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+        "sidebar hero"
+        "sidebar projects"
+        "sidebar education"
+        /* "sidebar additional-education"; */
+}
+
+.sidebar {
+    grid-area: sidebar;
+}
+
+.hero {
+    grid-area: hero;
+}
+
+.projects {
+    grid-area: projects;
+}
+
+.education {
+    grid-area: education;
+}
+
+/* .additional-education {
+    grid-area: additional-education;
+} */
+
+/* ______________________________SIDEBAR____________________________________ */
 
 .sidebar{
     
@@ -28,3 +90,37 @@ a:focus {
 .photo{
     border-radius: 50%;
 }
+.title{
+    margin-bottom: 10px;
+}
+.hero-prof-text{
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+}
+/* ________________________SECTION HERO________________________________ */
+.hero{
+    border-bottom: 1px solid rgb(105, 61, 238);
+}
+
+
+/* ________________________SECTION PROJECTS____________________________ */
+
+.projects{
+    border-bottom: 1px solid rgb(105, 61, 238);
+}
+.projects__list{
+    display: flex;
+        flex-wrap: wrap;
+        margin: -5px;
+}
+.projects__item{
+        width: calc(33.33333% - 10px);
+            margin: 5px;
+}
+.project-card-img{
+    max-width: 200px;
+}
+
+/* ______________________ */

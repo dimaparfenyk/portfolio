@@ -4,24 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Luxurious+Roman&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet" />
     <link rel="stylesheet" href="./styles.css">
     <title>Resume</title>
 </head>
 <body>
-<header class="about">
-    <h1>Dmitrij Parfenjuk</h1>
-    <p>Junior Front-end-developer</p>
-    <h2>Summary</h2>
-    <p>I am a Junior Front-End developer. I focus on HTML5,
-    CSS3, JS, React. English — Intermediate. Looking for a
-    remote job. Development, practice and work for the
-    result are important for me. I intend to develop
-    innovative technologies and deliver value to people.</p>
-</header>
+    
     <main>
-        <aside class="sidebar">
+        <div class="container">
+                <aside class="sidebar">
             <img class="photo" src="./images/photo.jpg" alt="Photo" width="300">
-            <h2>Contacts</h2>
+            <h2 class="subtitle">Contacts</h2>
             <nav>
             <ul>
                 <li>
@@ -49,7 +43,7 @@
                 </li>
             </ul>
     </nav>
-            <h2>Tech scills</h2>
+            <h2 class="subtitle">Tech scills</h2>
             <ul class="skills-list">
                 <li class="skills-item">
                     <p class="skills-text">HTML5</p>
@@ -80,7 +74,7 @@
                 </li>
             </ul>
     
-            <h2>Soft scills</h2>
+            <h2 class="subtitle">Soft scills</h2>
             <ul class="skills-list">
                 <li class="skills-item">
                     <p class="skills-text">Teamwork</p>
@@ -93,7 +87,7 @@
                 </li>
             </ul>
     
-            <h2>Language skills</h2>
+            <h2 class="subtitle">Language skills</h2>
             <ul class="skills-list">
                 <li class="skills-item">
                     <p class="skills-text">Ukrainian — native</p>
@@ -106,43 +100,104 @@
                 </li>
             </ul>
         </aside>
-        <section class="projects">
-            <h2>Projects</h2>
-            <ul>
-                <li class="projects__item">
+
+        <section class="hero section">
+            <h1 class="title">Dmitrij Parfenjuk</h1>
+            <p class="hero-prof-text">Junior Front-end-developer</p>
+            <h2 class="subtitle">Summary</h2>
+            <p class="section-text">I am a Junior Front-End developer. I focus on HTML5,
+                CSS3, JS, React. English — Intermediate. Looking for a
+                remote job. Development, practice and work for the
+                result are important for me. I intend to develop
+                innovative technologies and deliver value to people.</p>
+        </section>
+
+        <section class="projects section">
+            <h2 class="subtitle">Projects</h2>
+            <ul class="projects__list">
+                <!-- <li class="projects__item">
                     <a class="projects__link" 
                     href="https://olgadudnik.github.io/filmoteka/">
                     Filmoteka</a>
-                    <p>Project about searching movies, and adding favorite movies
+                    <p class="section-text">Project about searching movies, and adding favorite movies
                     to a client personal library. Using pure JS, npm-packages and
                     SCSS</p>
-                </li>
+                </li> -->
                 <li class="projects__item">
+                    <a 
+                    class="projects__link" 
+                    href="https://olgadudnik.github.io/filmoteka/">
+                        
+                    <img class="project-card-img" src="./images/projects/filmoteka.png" alt="Filmoteka">
+                           
+                    
+                        <div class="project-card-description">
+                            <span class="project-card-name">Filmoteka</span>
+                            <p class="section-text">Project about searching movies, and adding favorite movies
+                            to a client personal library. Using pure JS, npm-packages and
+                            SCSS</p>
+                        </div>
+                        </a>
+                        </li>
+
+                        <li class="projects__item">
+                            <a class="projects__link" href="https://zigo72200.github.io/-itd19/#home">
+                                        <img class="project-card-img" src="./images/projects/ice-cream.png" alt="ice-cream">
+                
+                                <div class="project-card-description">
+                                    <span class="project-card-name">Ice Cream</span>
+                                    <p class="section-text">Ice Cream company site. Neat and tasty design, responsible
+                                    layout. Using Parcel, SCSS, JS</p>
+                                </div>
+                            </a>
+                        </li>
+
+                <!-- <li class="projects__item">
                     <a class="projects__link"
                     href="https://zigo72200.github.io/-itd19/#home">
                     Ice Cream</a>
-                    <p>Ice Cream company site. Neat and tasty design, responsible
+                    <p class="section-text">Ice Cream company site. Neat and tasty design, responsible
                         layout. Using Parcel, SCSS, JS</p>
-                </li>
-                <li class="projects__item">
+                </li> -->
+                <!-- <li class="projects__item">
                     <a class="projects__link"
                     href="https://dimaparfenyk.github.io/goit-markup-hw-08/">
                 Portfolio</a>
-                   <p>A website with a responsive layout. Using HTML, CSS, SASS.</p> 
+                   <p class="section-text">A website with a responsive layout. Using HTML, CSS, SASS.</p> 
+                </li> -->
+
+                <li class="projects__item">
+                    <a class="projects__link" href="https://dimaparfenyk.github.io/goit-markup-hw-08/">
+        
+                                <img class="project-card-img" src="./images/projects/webStudio.png"
+                                    alt="WebStudio">
+                         
+                        <div class="project-card-description">
+                            <span class="project-card-name">WebStudio</span>
+                            <p class="section-text">A website with a responsive layout. Using HTML, CSS, SASS.</p>
+                        </div>
+                    </a>
                 </li>
             </ul>
         </section>
-        <section class="education">
-        <h2>Education</h2>
-        <p>ХЗВА</p>
-        </section>
-        <section class="additional-education">
-            <h2>Additional Education</h2>
-            <p>IT School GoIT
+        <section class="education section">
+            <h2 class="subtitle">Education</h2>
+            <p class="section-text">
+                 Kharkiv State Zooveterinary Academy | 2014-2019
+            </p>
+            <span> 
+                 Professional qualification: Doctor of veterinary medicine
+            </span>
+       
+        
+            <h3 class="subtitle">Additional Education</h3>
+            <p class="section-text">IT School GoIT
                 Full stack JS developer
                 October 2021 - September 2022 |Ukraine
             </p>
         </section>
+        </div>
     </main>
+  
 </body>
 </html>
