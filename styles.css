@@ -29,10 +29,13 @@ a:focus {
 }
 /* ____________________________TEXT STYLES________________________ */
 .title{
+    font-family: var(--font-title);
     text-align: center;
     font-size: 40px;
 }
 .subtitle{
+    font-family: var(--font-title);
+    margin-bottom: 15px;
     text-align: center;
     text-transform: uppercase;
     font-weight: 700;
@@ -41,12 +44,17 @@ a:focus {
     letter-spacing: 0.03em;
 }
 .section-text{
+  
     font-weight: 400;
     font-size: 18px;
     line-height: 1.71;
     letter-spacing: 0.03em;
 }
 
+.section-subtext{
+    font-size: 14px;
+color: rgb(244, 141, 7);
+}
 /* _____________________GRID_____________________- */
 .container {
     display: grid;
@@ -55,8 +63,10 @@ a:focus {
     grid-template-areas:
         "sidebar hero"
         "sidebar projects"
-        "sidebar education"
-        /* "sidebar additional-education"; */
+        "sidebar education";
+
+padding: 10px 15px;        
+    
 }
 
 .sidebar {
@@ -93,22 +103,29 @@ a:focus {
 .title{
     margin-bottom: 10px;
 }
-.hero-prof-text{
+
+.skills-list{
+    padding: 10px;
+}
+
+/* ________________________SECTION HERO________________________________ */
+.hero{
+    border-bottom: 1px solid rgb(105, 61, 238);
+    margin-bottom: 10px;
+}
+
+.hero-prof-text {
     font-size: 16px;
     font-weight: bold;
     text-align: center;
     margin-bottom: 30px;
 }
-/* ________________________SECTION HERO________________________________ */
-.hero{
-    border-bottom: 1px solid rgb(105, 61, 238);
-}
-
 
 /* ________________________SECTION PROJECTS____________________________ */
 
 .projects{
     border-bottom: 1px solid rgb(105, 61, 238);
+    margin-bottom: 10px;
 }
 .projects__list{
     display: flex;
