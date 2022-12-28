@@ -21,10 +21,7 @@ ul {
     margin: 0;
 }
 
-a,
-a:hover,
-a:focus {
-    color: #000000;
+a {
     text-decoration: none;
 }
 /* ____________________________TEXT STYLES________________________ */
@@ -35,7 +32,7 @@ a:focus {
 }
 .subtitle{
     font-family: var(--font-title);
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     text-align: center;
     text-transform: uppercase;
     font-weight: 700;
@@ -44,60 +41,39 @@ a:focus {
     letter-spacing: 0.03em;
 }
 .section-text{
-  
-    font-weight: 400;
+    font-weight: 600;
     font-size: 18px;
-    line-height: 1.71;
+    line-height: 1.70;
+    letter-spacing: 0.03em;
+}
+.text{
+font-weight: 500;
+    font-size: 18px;
+    line-height: 1.6;
     letter-spacing: 0.03em;
 }
 
-.section-subtext{
-    font-size: 14px;
-color: rgb(244, 141, 7);
+.wrapper {
+    display: flex;
+    align-items: flex-start; 
 }
-/* _____________________GRID_____________________- */
-.container {
-    display: grid;
-    grid-template-columns: 30% 70%;
-    grid-template-rows: auto auto auto auto;
-    grid-template-areas:
-        "sidebar hero"
-        "sidebar projects"
-        "sidebar education";
-
-padding: 10px 15px;        
-    
+.container{
+    padding: 0 20px;
 }
-
-.sidebar {
-    grid-area: sidebar;
-}
-
-.hero {
-    grid-area: hero;
-}
-
-.projects {
-    grid-area: projects;
-}
-
-.education {
-    grid-area: education;
-}
-
-/* .additional-education {
-    grid-area: additional-education;
-} */
-
 /* ______________________________SIDEBAR____________________________________ */
 
 .sidebar{
-    
-    padding: 20px 0px 30px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: center;
+    padding: 40px 40px 400px 40px;
     width: 350px;
+   
     background-color: rgb(228, 227, 217);
 }
 .photo{
+    width:240px;
     border-radius: 50%;
 }
 .title{
@@ -107,11 +83,26 @@ padding: 10px 15px;
 .skills-list{
     padding: 10px;
 }
+.social-items{
+    margin-bottom: 10px;
+}
+.social-list{
+    margin-bottom: 30px;
+}
+.adress-list{
+    margin-bottom:-10px;
+}
+.adress-item{
+    margin-bottom: 10px;
+}
+.contact-link{
+    color: rgb(0, 0, 0);
+}
 
 /* ________________________SECTION HERO________________________________ */
-.hero{
-    border-bottom: 1px solid rgb(105, 61, 238);
-    margin-bottom: 10px;
+.section{
+    padding:24px 0;
+    border-bottom: 3px dashed rgb( 61, 144, 238);
 }
 
 .hero-prof-text {
@@ -123,21 +114,37 @@ padding: 10px 15px;
 
 /* ________________________SECTION PROJECTS____________________________ */
 
-.projects{
-    border-bottom: 1px solid rgb(105, 61, 238);
-    margin-bottom: 10px;
-}
 .projects__list{
     display: flex;
-        flex-wrap: wrap;
-        margin: -5px;
+    align-items: baseline;
+    justify-content: space-around;
+    margin: -5px;
 }
 .projects__item{
-        width: calc(33.33333% - 10px);
-            margin: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(33.33333% - 10px);
+    margin: 5px;
+}
+.projects__link{
+    margin-bottom: 10px;
+}
+.projects__link:hover,
+.projects__link:focus{
+transition-duration: 300ms;
+scale: 1.04;
+}
+.github-link{
+    font-weight: 600;
+    font-size: 18px;
+    color: rgb(61, 144, 238);
+}
+.github-link:hover{
+    transition-duration: 250ms;
+    color: rgb(172, 107, 17);
+    scale: 1.02;
 }
 .project-card-img{
-    max-width: 200px;
+    max-width: 120px;
 }
-
-/* ______________________ */

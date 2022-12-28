@@ -10,12 +10,12 @@
     <title>Resume</title>
 </head>
 <body>
-    
     <main>
-        <div class="container">
-                <aside class="sidebar">
+        <div class="wrapper">
+            <div class="sidebar">
             <img class="photo" src="./images/photo.jpg" alt="Photo" width="300">
    
+            <div class="skills-box">
             <h2 class="subtitle">Tech skills</h2>
             <ul class="skills-list">
                 <li class="skills-item">
@@ -25,16 +25,16 @@
                     <p class="skills-text">SASS,BEM,Flexbox,Grid</p>
                 </li>
                 <li class="skills-item">
-                    <p class="skills-text">Adaptive layout</p>
+                    <p class="skills-text">Adaptive/Responsive design</p>
                 </li>
                 <li class="skills-item">
-                    <p class="skills-text">Responsive layout</p>
+                    <p class="skills-text">JavaScript</p>
                 </li>
                 <li class="skills-item">
-                    <p class="skills-text">JavaScript,ES6,React</p>
+                    <p class="skills-text">React</p>
                 </li>
                 <li class="skills-item">
-                    <p class="skills-text">Node.js</p>
+                    <p class="skills-text">Redux</p>
                 </li>
                 <li class="skills-item">
                     <p class="skills-text">Github</p>
@@ -42,21 +42,21 @@
                 <li class="skills-item">
                     <p class="skills-text">REST API, Axios</p>
                 </li>
-                <!-- <li class="skills-item">
-                    <p class="skills-text">REST API</p>
-                </li> -->
             </ul>
     
             <h2 class="subtitle">Soft skills</h2>
             <ul class="skills-list">
                 <li class="skills-item">
-                    <p class="skills-text">Teamwork</p>
+                    <p class="skills-text">Optimistic</p>
                 </li>
                 <li class="skills-item">
-                    <p class="skills-text">Communication</p>
+                    <p class="skills-text">Hard-working</p>
                 </li>
                 <li class="skills-item">
-                    <p class="skills-text">Decision-making</p>
+                    <p class="skills-text">Adaptable</p>
+                </li>
+                <li class="skills-item">
+                    <p class="skills-text">Communicative</p>
                 </li>
             </ul>
     
@@ -72,20 +72,39 @@
                     <p class="skills-text">English — intermediate</p>
                 </li>
             </ul>
+            </div>
 <!-- _________________________________ADRESS________________________________________ -->
 
-
+            <div class="contacts-box">
             <h2 class="subtitle">Contacts</h2>
+            
+            <ul class="social-list">
+                <li class="social-items">
+                    <a class="contact-link" href="https://github.com/dimaparfenyk">
+                        Github
+                    </a>
+                </li>
+                <li class="social-items">
+                    <a class="contact-link" href="https://www.linkedin.com/in/dmitrij-parfenyk-3b882323b/">
+                        Linkedin
+                    </a>
+                </li>
+                <li class="social-items">
+                    <a class="contact-link" href="viber://chat?number=+380956912134" title="Viber">
+                        Viber: +38(095)691-21-34
+                    </a>
+                </li>
+            </ul>
             <address>
                 <ul class="adress-list">
                     <li class="adress-item">
-                        <a href="tel:+380956912134">
-                            +38 095 691 21 34"
+                        <a class="contact-link" href="tel:+380956912134">
+                          phone:  +38 095 691 21 34"
                         </a>
                     </li>
                     <li class="adress-item">
-                        <a href="mailto:dimaparfenyk1990@gmail.com">
-                            dimaparfenyk1990@gmail.com
+                        <a class="contact-link" href="mailto:dimaparfenyk1990@gmail.com">
+                          mail: dimaparfenyk1990@gmail.com
                         </a>
                     </li>
                     <li class="adress-item">
@@ -93,42 +112,52 @@
                     </li>
                 </ul>
             </address>
-            
-            <ul class="social-links">
-                <li class="social-items">
-                    <a href="https://github.com/dimaparfenyk">
-                        Github
-                    </a>
-                </li>
-                <li class="social-items">
-                    <a href="https://www.linkedin.com/in/dmitrij-parfenyk-3b882323b/">
-                        Linkedin
-                    </a>
-                </li>
-            
-            </ul>
-        </aside>
+            </div>
+        </div>
 
 <!-- ______________________________________________HERO________________________________ -->
 
-
+        <div class="container">
         <section class="hero section">
-            <h1 class="title">Dmitrij Parfenjuk</h1>
+            <h1 class="title">Dmitrij Parfeniuk</h1>
             <p class="hero-prof-text">Junior Front-end-developer</p>
-            <h2 class="subtitle">Summary</h2>
-            <p class="section-text">I am a Junior Front-End developer. I focus on HTML5,
-                CSS3, JS, React. English — Intermediate. Looking for a
-                remote job. Development, practice and work for the
-                result are important for me. I intend to develop
-                innovative technologies and deliver value to people.</p>
+            <h2 class="subtitle">SUMMARY</h2>
+            <p class="text">I am a Front-End developer looking for a full-time position in
+            a company that's aimed at making both everyday
+            life and business easier, more productive and user-friendly. I
+            have sound knowledge of HTML, CSS, JavaScript, and React.
+            Also, I have hands-on experience in following Agile /Scrum
+            methodology when working in a team. I am a fast learner,
+            responsible, and ready for challenging tasks.</p>
         </section>
 
         <!-- _________________________________________PROJECTS___________________________ -->
 
 
         <section class="projects section">
-            <h2 class="subtitle">Projects</h2>
+            <h2 class="subtitle">PROJECT EXPERIENCE</h2>
             <ul class="projects__list">
+
+                <li class="projects__item">
+                    <a class="projects__link" href="https://dimaparfenyk.github.io/goit-markup-hw-08/">
+                        <img class="project-card-img" src="./images/projects/webStudio.png" alt="WebStudio">
+                    </a>
+                    <a class="github-link" href="https://github.com/dimaparfenyk/goit-markup-hw-08">--- Github ---</a>
+                    <div class="project-card-description">
+                        <p class="text">A website with a responsive layout. Using HTML, CSS, SASS.</p>
+                    </div>
+                </li>
+
+                <li class="projects__item">
+                    <a class="projects__link" href="https://zigo72200.github.io/-itd19/#home">
+                        <img class="project-card-img" src="./images/projects/ice-cream.png" alt="ice-cream">
+                    </a>
+                    <a class="github-link" href="https://github.com/dimaparfenyk/ice-cream">--- Github ---</a>
+                    <div class="project-card-description">
+                        <p class="text">Ice Cream company site. Neat and tasty design, responsible
+                            layout. Using Parcel, SCSS, JS</p>
+                    </div>
+                </li>
               
                 <li class="projects__item">
                     <a 
@@ -136,59 +165,48 @@
                     href="https://olgadudnik.github.io/filmoteka/">
                         
                     <img class="project-card-img" src="./images/projects/filmoteka.png" alt="Filmoteka">
-                           
-                    
-                        <div class="project-card-description">
-                            <p class="section-text">Project about searching movies, and adding favorite movies
-                            to a client personal library. Using pure JS, npm-packages and
-                            SCSS</p>
-                        </div>
                         </a>
-                        </li>
-
-                        <li class="projects__item">
-                            <a class="projects__link" href="https://zigo72200.github.io/-itd19/#home">
-                                        <img class="project-card-img" src="./images/projects/ice-cream.png" alt="ice-cream">
-                
-                                <div class="project-card-description">
-                                    <p class="section-text">Ice Cream company site. Neat and tasty design, responsible
-                                    layout. Using Parcel, SCSS, JS</p>
-                                </div>
-                            </a>
-                        </li>
+                    <a class="github-link" href="https://github.com/dimaparfenyk/filmoteka">--- Github ---</a>
+                        <div class="project-card-description">
+                        <p class="text">Project about searching movies, and adding favorite movies
+                            to a client personal library. Using pure JS, npm-packages and
+                            SCSS.
+                        </p>
+                        </div>             
+                </li>
 
                 <li class="projects__item">
-                    <a class="projects__link" href="https://dimaparfenyk.github.io/goit-markup-hw-08/">
-        
-                                <img class="project-card-img" src="./images/projects/webStudio.png"
-                                    alt="WebStudio">
-                         
-                        <div class="project-card-description">
-                            <p class="section-text">A website with a responsive layout. Using HTML, CSS, SASS.</p>
-                        </div>
+                    <a class="projects__link" href="https://team3-pets-support.netlify.app">
+                        <img class="project-card-img" src="./images/projects/vet.jpg" alt="WebStudio">
                     </a>
+                    <a class="github-link" href="https://github.com/dimaparfenyk/Pets-Support--front">--- Github ---</a>
+                    <div class="project-card-description">
+                        <p class="text">A website with a responsive layout. Using following technologies HTML, CSS, JS, React, Redux .</p>
+                    </div>
                 </li>
             </ul>
         </section>
 
         <!-- __________________________________EDUCATION__________________________________ -->
 
+        <section class="education section">
+            <h2 class="subtitle">EDUCATION</h2>
+            <p class="section-text">Kharkiv State Zooveterinary Academy</p>
+            <p>2014-2019</p>
+            <p>Professional qualification: Doctor of veterinary medicine</p>
+            <p class="section-text">IT School GoIT (Kharkov)</p>
+            <p> 2021-2022</p>
+            <p>Full stack JS developer </p>
+        </section>
 
         <section class="education section">
-            <h2 class="subtitle">Education</h2>
-            <p class="section-text">
-                 Kharkiv State Zooveterinary Academy <span class="section-subtext">| 2014-2019</span>
-            </p>
-            <span> 
-                 Professional qualification: Doctor of veterinary medicine
-            </span>
-            <p class="section-text">IT School GoIT
-                Full stack JS developer <span class="section-subtext">| 2021-2022</span>
-                </p>
-            </p>
+            <h2 class="subtitle">WORK EXPERIENCE</h2>
+            <p class="section-text">Veterinary Сlinic</p>
+            <p>2018-2022</p>
+            <p>Professional qualification: Doctor of veterinary medicine</p>
         </section>
         </div>
+        </div>
     </main>
-  
 </body>
 </html>
