@@ -67,7 +67,7 @@ font-weight: 500;
     flex-direction: column;
     align-items: baseline;
     justify-content: center;
-    padding: 40px 40px 400px 40px;
+    padding: 40px 40px 100px 40px;
     width: 350px;
    
     background-color: rgb(228, 227, 217);
@@ -104,6 +104,9 @@ font-weight: 500;
     padding:24px 0;
     border-bottom: 3px dashed rgb( 61, 144, 238);
 }
+.education{
+    border: none;
+}
 
 .hero-prof-text {
     font-size: 16px;
@@ -124,8 +127,8 @@ font-weight: 500;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: calc(33.33333% - 10px);
-    margin: 5px;
+    width: calc(33.33333% - 20px);
+    margin: 10px;
 }
 .projects__link{
     margin-bottom: 10px;
