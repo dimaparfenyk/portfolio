@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Luxurious+Roman&family=Roboto:wght@400;700&display=swap"
-        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Luxurious+Roman&family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./styles.css">
     <title>Resume</title>
 </head>
@@ -14,7 +13,8 @@
         <div class="wrapper">
             <div class="sidebar">
             <img class="photo" src="./images/photo.jpg" alt="Photo" width="300">
-   
+                    <h1 class="title">Dmitrij Parfeniuk</h1>
+                    <p class="hero-prof-text">Junior Front-End-Developer</p>
             <div class="skills-box">
             <h2 class="subtitle">Tech skills</h2>
             <ul class="skills-list">
@@ -81,20 +81,20 @@
             <ul class="social-list">
                 <li class="social-item">
                     <a class="social-link" href="https://github.com/dimaparfenyk">
-                        <svg class="social-logo" width="32" height="32">
-                            <use href="./images/icons.svg#icon-github" width="32" height="32"></use>
+                        <svg class="social-logo" width="40" height="40">
+                            <use href="./images/icons.svg#icon-github" width="40" height="40"></use>
                         </svg>
                     </a>
                 </li>
                 <li class="social-item">
                     <a class="social-link" href="https://www.linkedin.com/in/dmitrij-parfeniuk-3b882323b/">
-                    <svg class="social-logo" width="32" height="32">
-                        <use href="./images/icons.svg#icon-linkedin" width="32" height="32"></use>
+                    <svg class="social-logo" width="40" height="40">
+                        <use href="./images/icons.svg#icon-linkedin" width="40" height="40"></use>
                     </svg>
                     </a>
                 </li>
             </ul>
-            <address>
+            <address class="adress">
                 <ul class="adress-list">
                     <li class="adress-item">
                         <a class="contact-link" href="tel:+380956912134">
@@ -122,9 +122,8 @@
 <!-- ______________________________________________HERO________________________________ -->
 
         <div class="container">
-        <section class="hero section">
-            <h1 class="title">Dmitrij Parfeniuk</h1>
-            <p class="hero-prof-text">Junior Front-End-Developer</p>
+        <section class="hero">
+            <div class="about-wrapper">
             <h2 class="subtitle">SUMMARY</h2>
             <p class="text">I am a Front-End developer looking for a full-time position in
             a company that's aimed at making both everyday
@@ -132,7 +131,8 @@
             have got the basic knowledge of HTML, CSS, JavaScript, and React.
             I am a responsible and hard-working person. I deal with a new job quikly and
              I am always ready for a challanging task.</p>
-        </section>
+            </div>
+            </section>
 
         <!-- _________________________________________PROJECTS___________________________ -->
 
@@ -147,7 +147,7 @@
                     </a>
                     <a class="github-link" href="https://github.com/dimaparfenyk/goit-markup-hw-08">--- Github ---</a>
                     <div class="project-card-description">
-                        <p class="text">A website with a responsive layout. Using HTML, CSS, SASS.</p>
+                        <p class="text">A website with a responsive layout. Using following technologies HTML, CSS, SASS.</p>
                     </div>
                 </li>
 
@@ -158,7 +158,7 @@
                     <a class="github-link" href="https://github.com/dimaparfenyk/ice-cream">--- Github ---</a>
                     <div class="project-card-description">
                         <p class="text">Ice Cream company site. Neat and tasty design, responsible
-                            layout. Using Parcel, SCSS, JS</p>
+                            layout. Using following technologies Parcel, SCSS, JS</p>
                     </div>
                 </li>
               
@@ -172,7 +172,7 @@
                     <a class="github-link" href="https://github.com/dimaparfenyk/filmoteka">--- Github ---</a>
                         <div class="project-card-description">
                         <p class="text">Project about searching movies, and adding favorite movies
-                            to a client personal library. Using pure JS, npm-packages and
+                            to a client personal library. Using following technologies pure JS, npm-packages and
                             SCSS.
                         </p>
                         </div>             
@@ -211,5 +211,48 @@
         </div>
         </div>
     </main>
+    <footer class="footer">
+        <div class="footer-container">
+            <h2 class="footer-subtitle">Contacts</h2>
+            <address class="adress">
+                <ul class="adress-list">
+                    <li class="adress-item">
+                        <a class="contact-link" href="tel:+380956912134">
+                            Phone: +38 095 691 21 34"
+                        </a>
+                    </li>
+                    <li class="adress-item">
+                        <a class="contact-link" href="viber://chat?number=+380956912134" title="Viber">
+                            Viber: +38(095)691-21-34
+                        </a>
+                    </li>
+                    <li class="adress-item">
+                        <a class="contact-link" href="mailto:dimaparfenyk1990@gmail.com">
+                            Mail: dimaparfenyk1990@gmail.com
+                        </a>
+                    </li>
+                    <li class="adress-item">
+                        <p>Kharkov,Ukraine</p>
+                    </li>
+                </ul>
+            </address>
+            <ul class="footer-socials">
+                <li class="social-item">
+                    <a class="social-link" href="https://github.com/dimaparfenyk">
+                        <svg class="social-logo" width="40" height="40">
+                            <use href="./images/icons.svg#icon-github" width="40" height="40"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="social-item">
+                    <a class="social-link" href="https://www.linkedin.com/in/dmitrij-parfeniuk-3b882323b/">
+                        <svg class="social-logo" width="40" height="40">
+                            <use href="./images/icons.svg#icon-linkedin" width="40" height="40"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
 </body>
 </html>
