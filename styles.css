@@ -57,9 +57,9 @@ font-weight: 500;
     display: flex;
     align-items: flex-start; 
 }
-.container{
+/* .container{
     padding: 0 20px;
-}
+} */
 /* ______________________________SIDEBAR____________________________________ */
 
 .sidebar{
@@ -83,16 +83,33 @@ font-weight: 500;
 .skills-list{
     padding: 10px;
 }
-.social-items{
-    margin-bottom: 10px;
+.social-item:not(:last-child){
+    margin-right: 24px;
 }
 .social-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-bottom: 30px;
 }
-.adress-list{
-    margin-bottom:-10px;
+.social-link{
+    border-radius: 50%;
+    color:#2196f3;
+    transition-property: color;
+    transition-duration: 400ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.adress-item{
+.social-link:hover,
+.social-link:focus {
+    color: #188cef;
+}
+.social-logo {
+    fill: currentColor;
+}
+/* .adress-list{
+    
+} */
+.adress-item:not(:last-child){
     margin-bottom: 10px;
 }
 .contact-link{
@@ -101,10 +118,15 @@ font-weight: 500;
 
 /* ________________________SECTION HERO________________________________ */
 .section{
-    padding:24px 0;
-    border-bottom: 3px dashed rgb( 61, 144, 238);
+    padding:24px 20px;
+}
+.hero{
+    background-color: #f5f4fa;
 }
 .education{
+    background-color: #f5f4fa;
+}
+.work{
     border: none;
 }
 
@@ -132,20 +154,25 @@ font-weight: 500;
 }
 .projects__link{
     margin-bottom: 10px;
+    transition-property: scale;
+    transition-duration: 500ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .projects__link:hover,
 .projects__link:focus{
-transition-duration: 300ms;
 scale: 1.04;
 }
 .github-link{
     font-weight: 600;
     font-size: 18px;
-    color: rgb(61, 144, 238);
+    color: #2196f3;
+    transition-property: color, scale;
+    transition-duration: 300ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.github-link:hover{
-    transition-duration: 250ms;
-    color: rgb(172, 107, 17);
+.github-link:hover,
+.github-link:focus{
+    color: #188cef;
     scale: 1.02;
 }
 .project-card-img{
